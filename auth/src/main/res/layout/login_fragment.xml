@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+                android:layout_marginBottom="@dimen/marginS"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnNormalHeight">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/regular"
+                        android:textColor="@color/colorGreyDark"
+                        android:textSize="@dimen/fontM"
+                        android:text="@string/labelNotHaveAccount"/>
+
+                <TextView
+                        android:id="@+id/btnRegister"
+                        android:paddingTop="@dimen/paddingXS"
+                        android:paddingBottom="@dimen/paddingXS"
+                        android:layout_marginLeft="@dimen/marginM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/bold"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/fontM"
+                        android:text="@string/labelRegister"
+                        android:paddingLeft="@dimen/paddingM"
+                        android:paddingRight="@dimen/paddingM"
+                        android:background="@drawable/btn_rounded_green"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+                android:paddingLeft="@dimen/paddingM"
+                android:paddingRight="@dimen/paddingM"
+                android:layout_marginTop="@dimen/marginL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/inputFormNormalHeight"
+                    android:background="@drawable/bg_input_field">
+
+                <EditText
+                        android:id="@+id/edtEmailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorNull"
+                        android:fontFamily="@font/regular"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="@dimen/paddingM"
+                        android:paddingRight="@dimen/paddingM"
+                        android:singleLine="true"
+                        android:textColor="@color/colorGreyDark"
+                        android:textSize="@dimen/fontL"
+                        tools:text="ade.rifaldi@gmail.com"
+                        android:textColorHint="@color/colorGrey"
+                        android:hint="@string/hintUserName"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_marginTop="@dimen/marginM"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/inputFormNormalHeight"
+                    android:layout_marginBottom="@dimen/marginL"
+                    android:background="@drawable/bg_input_field">
+
+                <RelativeLayout
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/inputFormNormalHeight"
+                        android:id="@+id/btnShowPassword"
+                        android:paddingRight="@dimen/paddingM"
+                        android:paddingLeft="@dimen/paddingM">
+                    <ImageView
+                            android:id="@+id/icShowPassword"
+                            android:layout_width="@dimen/iconSizeSM"
+                            android:layout_height="@dimen/iconSizeSM"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_show_password"/>
+                </RelativeLayout>
+
+
+                <EditText
+                        android:layout_toLeftOf="@id/btnShowPassword"
+                        android:id="@+id/edtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorNull"
+                        android:fontFamily="@font/regular"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:paddingLeft="@dimen/paddingM"
+                        android:paddingRight="@dimen/paddingM"
+                        android:singleLine="true"
+                        android:textColor="@color/colorGreyDark"
+                        android:textSize="@dimen/fontL"
+                        tools:text="1234567890"
+                        android:textColorHint="@color/colorGrey"
+                        android:hint="@string/hintPassword"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/btnLogin"
+                    android:layout_marginTop="@dimen/marginM"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btnNormalHeight"
+
+                    android:background="@drawable/btn_square_ok">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/labelBtnLogin"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/fontL"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

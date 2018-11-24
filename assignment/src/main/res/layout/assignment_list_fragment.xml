@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/listAssignment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"/>
+
+        <TextView
+                android:id="@+id/txtEmptyInfo"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/marginS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/colorGreyDark"
+                android:textSize="@dimen/fontL"
+                android:layout_centerInParent="true"
+                android:text="No assignment today\nSelect date"/>
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

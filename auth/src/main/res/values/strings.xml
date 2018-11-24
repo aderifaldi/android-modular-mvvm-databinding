@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">auth</string>
+    <string name="labelForgotPassword">Forgot?</string>
+    <string name="labelTitleLogin">Login</string>
+    <string name="hintUserName">Username</string>
+    <string name="hintPassword">Password</string>
+    <string name="labelBtnLogin">Login</string>
+    <string name="labelRegister">Register</string>
+    <string name="labelTitleRegister">Register</string>
+    <string name="labelBtnRegister">Register</string>
+    <string name="labelTitleForgotPassword">Forgot password</string>
+    <string name="labelBtnForgotPassword">Send now</string>
+    <string name="hintConfirmPassword">Confirm password</string>
+    <string name="labelTitleChangePassword">Change Password</string>
+    <string name="labelBtnSubmit">Submit</string>
+    <string name="errorMessageEmptyEmailAddress">Please fill email address</string>
+    <string name="errorMessageEmptyPassword">Please fill password</string>
+    <string name="errorMessageEmailNotValid">Email address not valid</string>
+    <string name="errorMessageMinimumPassword">Password at least 6 characters</string>
+    <string name="hintEmailAddress">Email address</string>
+    <string name="labelForgotPasswordInfo">Activation link will send to that email address</string>
+    <string name="hintOldPassword">Old password</string>
+    <string name="hintNewPassword">New password</string>
+    <string name="labelShowPassword">Show</string>
+    <string name="labelHidePassword">Hide</string>
+    <string name="errorMessageEmptyConfirmPassword">Please fill confirm password</string>
+    <string name="alertMessageConfirmPasswordNotMatch">Confirm password not match</string>
+    <string name="labelNotHaveAccount">Not have an account?</string>
+</resources>
